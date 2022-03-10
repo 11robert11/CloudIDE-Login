@@ -1,2 +1,8 @@
-uname,period,teacher,ip
-test,4,poole,10.1.10.198:8080
+uname,period,teacher,ip,docker id
+test,4,poole,10.1.10.198:8080,x
+user0,6,poole,10.1.13.48:8800,x
+user1,6,poole,10.1.13.48:8801,x
+user2,6,poole,10.1.13.48:8802,x
+user3,6,poole,10.1.13.48:8803,x
+user4,6,poole,10.1.13.48:8804,x
+user5,6,poole,10.1.13.48:8805,x

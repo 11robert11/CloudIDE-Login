@@ -1,6 +1,16 @@
 <!DOCTYPE html>
-<html>
-	<form action="login_action.php" method="post">
+
+<?php
+	if (isset($_POST["submit"]))
+	{
+		exec('echo test');
+	}
+?>
+
+
+
+tml>
+	<form action="action_page.php" method="post">
 		<div class="container">
 			<label for="uname"><b>Username</b></label>
 			<input type="text" placeholder="Enter Username" name="uname" required>
