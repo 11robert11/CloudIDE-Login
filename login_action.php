@@ -1,21 +1,16 @@
 <?php
 $row = 1;
-$unameFound = 0;
 if (($handle = fopen("list.csv", "r")) !== FALSE) {
-    while (($data = fgetcsv($handle, 1000, ",")) !== FALSE and $unameFound == 0) {
-        $num = count($data);
-        $row++;
-        if($data[0] == $_POST["uname"]) {
-		echo($data[3]);
+    while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
+        if($data[0] == $_POST["uname"] && $data[5] == hash("sha256", $_POST["psw"])) {
 		echo("<script type=\"text/javascript\">window.location.replace(\"http://" . $data[3] . " \");</script>");
 		fclose($handle);
-		die();
-		echo "ummm";
+		break;
         }
 
     }
+	 echo("<script type=\"text/javascript\">window.location.replace(\"/index.html\");</script>");
     fclose($handle);
-	echo "asdfasdfasd";
-//	header('Location: /index.html');
+//header('Location: /index.html');
 }
 ?>
