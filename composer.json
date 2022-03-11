@@ -1,3 +1,13 @@
 {
-
+    "authors": [
+        {
+            "name": "Robert Barnett",
+            "email": "robertbarnett06@gmail.com",
+            "role": "Developer"
+        },
+        {
+            "name": "Nikitas Clapsomehting",
+            "role": "Developer"
+        }
+    ]
 }
