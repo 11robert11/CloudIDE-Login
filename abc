@@ -1,0 +1,4 @@
+<?php
+	$test = exec("/bin/docker");
+	echo $test;
+?>

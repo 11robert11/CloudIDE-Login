@@ -1,0 +1,11 @@
+#! /bin/bash
+docker run -d \
+  rm \
+  --name=code-server-$username\
+  -e PUID=1000 \
+  -e PGID=1000 \
+  -e TZ=Europe/London \
+  -e HASH_PASSWORD=$hash_password  \
+  //publish random port but get that port
+  -v code-server-volume-$username:/config \
+  code-server-cvhs
