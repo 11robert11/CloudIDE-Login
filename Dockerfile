@@ -1,8 +1,8 @@
 FROM php:7.4-cli AS php_docker
-RUN apt-get update
-RUN apt-get -y upgrade
-RUN apt-get -y install docker
-
+ENV DEBIAN_FRONTEND=noninteractive
+RUN apt-get update && \
+	apt-get -qy full-upgrade && \
+	apt-get install -qy docker
 FROM php_docker
 COPY . /usr/src/myapp
 WORKDIR /usr/src/myapp
