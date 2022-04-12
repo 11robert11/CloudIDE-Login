@@ -1,7 +1,7 @@
 import csv
 
-header = ['uname', 'period', 'teacher', 'ip', 'docker id']
-data = ['test', 4, 'poole', '10.1.10.198:8080', 'x']
+header = ['email', 'first name', 'last name' 'period', 'teacher', 'hash password']
+data = ['test1234@stu.gusd.net', 'test', 'mctestinson' 4, 'poole', 'x']
 
 x = 1
 port = 8800
@@ -16,7 +16,7 @@ with open ('list.csv', 'w') as f:
 	writer.writerow(data)
 
 	for x in range(6):
-		DataStart = ['user' + str(x), 6, 'poole', '10.1.13.48:'+str(port), 'x']
+		DataStart = ['user' + str(x) + '@stu.gusd.net', 'first' + str(x), 'last' + str(x),  6, 'poole', '5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8']
 		x+=1
 		port+=1
 
