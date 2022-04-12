@@ -5,6 +5,7 @@ RUN apt-get update && \
     apt-get install -qy curl && \
     apt-get install -qy curl && \
     curl -sSL https://get.docker.com/ | sh
+
 FROM php_with_docker
 COPY ./www /usr/src/myapp
 WORKDIR /usr/src/myapp
